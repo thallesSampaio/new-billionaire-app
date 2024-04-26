@@ -1,11 +1,11 @@
 'use client';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import FaceOne from "@/assets/face1.png"
 import FaceTwo from "@/assets/face2.png"
 import FaceThree from "@/assets/face3.png"
 import FaceFour from "@/assets/face4.png"
-import Nulo from "@/assets/_af7a37cb-d222-450d-b22b-ebedc0ad9e2c.jpeg"
+import Default from "@/assets/default.png"
 
 export function Dice() {
 
@@ -13,6 +13,14 @@ export function Dice() {
     const [rollTwo, setRollTwo] = useState<number>(0)
     const [imageOne, setImageOne] = useState<StaticImageData>()
     const [imageTwo, setImageTwo] = useState<StaticImageData>()
+
+    function init() {
+        setImageOne(Default)
+        setImageTwo(Default)
+    }
+    useEffect(() => {
+        init();
+      },[]);
 
     const handleClickRoll = () => {
         const number = Math.floor(Math.random() * 4) + 1;
