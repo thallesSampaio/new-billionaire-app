@@ -1,4 +1,5 @@
 import {Dice} from "@/components/Dice"
+import {LuckyOrUnlucky} from "@/components/LuckyOrUnlucky"
 
 interface DisplayDiceProps{
   valor:number
@@ -6,8 +7,9 @@ interface DisplayDiceProps{
 
 export function Section() {
   return (
-    <div>
+    <div className="flex justify-center flex-wrap gap-32">
       <Dice/>
+      <LuckyOrUnlucky/>
     </div>
   )
 }
