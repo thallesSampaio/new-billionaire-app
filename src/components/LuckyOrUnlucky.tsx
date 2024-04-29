@@ -26,7 +26,6 @@ export function LuckyOrUnlucky() {
         let randomResult = getRandomElement(data);
 
         if (randomResult === undefined) {
-            alert("vazio!")
             data.push(...auxData)
             randomResult = getRandomElement(data);
             if (randomResult !== undefined) {
@@ -42,10 +41,10 @@ export function LuckyOrUnlucky() {
     }
     return (
         <div className="shadow-lg mx-4 my-4">
-            <div className="w-64 border">
+            <div className="w-64">
                 <div className="flex justify-center flex-wrap p-4">
-                    <p>{result}Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rem.</p>
-                    <button onClick={handleClickDraw} className="bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 inline-block mt-4 rounded">Sortear</button>
+                    <p className="break-all">{result}Lorem ipsum dolor sit ametalkshjdalksdjhaklsdjhalkdjahsldçkaljsdbhlkajsdhlaksjdhbalksjdbalksdjbalksdjbalksdjbadsa consectetur adipisicing elit. Pea.ksdjbak.sdjnbalk.sdjbal.ksdjbaks.,djbak,.sdjarferendis, rem.</p>
+                    <button onClick={handleClickDraw} className="bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 mt-4 rounded">Sortear</button>
                 </div>
             </div>
         </div>
