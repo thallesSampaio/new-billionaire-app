@@ -1,5 +1,7 @@
 import {Dice} from "@/components/Dice"
 import {LuckyOrUnlucky} from "@/components/LuckyOrUnlucky"
+import Image from "next/image"
+import Bgimg from "@/assets/jogo-tabuleiro.jpg"
 
 interface DisplayDiceProps{
   valor:number

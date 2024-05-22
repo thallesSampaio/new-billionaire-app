@@ -61,12 +61,8 @@ export function Dice() {
         <div className="p-4 shadow-xl">
             <div className="flex flex-col gap-8">
                 <div className="flex items-center justify-center gap-8 p-4">
-                    <Image
-                        src={imageOne}
-                        alt="img 1" />
-                    <Image
-                        src={imageTwo}
-                        alt="img 2" />
+                    <div>{rollOne}</div>
+                    <div>{rollTwo}</div>
                 </div>
                 <div className="flex justify-center">
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={handleClickRoll}>Rolar</button>
